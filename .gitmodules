@@ -1,0 +1,3 @@
+[submodule "executable"]
+	path = executable
+	url = git@github.com:PacificCommunity/CREWS-ADCIRC.git
