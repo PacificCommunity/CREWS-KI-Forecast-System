@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul  8 14:10:27 2021
+
+@author: judithg
+"""
+
+# Archiving the output.mat
+
+import os, shutil
+
+
+def archive_output(now):
+# function to save the swan output.mat file to the archive folder
+    floutname='../archives/' + now.strftime("%Y") + now.strftime("%m") + now.strftime("%d") + now.strftime("%H")  +'_output.mat'
+    fout_name = '../runs/' + now.strftime("%Y") + now.strftime("%m") + now.strftime("%d") + now.strftime("%H")  + '/output.mat'
+    shutil.copy(fout_name, floutname)
+    return()
+    
